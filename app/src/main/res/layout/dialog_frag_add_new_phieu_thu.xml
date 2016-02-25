@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/tv_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Phiếu Thu Mới"
+        android:background="@drawable/bg_tile_edit_infor"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_tilte"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/customer"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spinner_container_ten_KH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+                <TextView
+                    android:id="@+id/MaPhieu"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã Phiếu: "/>
+                <TextView
+                    android:id="@+id/ngaymua"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày mua: "/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/toggle_thanhtoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/toggle_button_1"/>
+                <TextView
+                    android:id="@+id/tv_thanhtoan"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chưa Thanh Toán"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:text="Số Kg: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/ed_sokg"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:hint="(kg)"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:numeric="integer|decimal"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal" />
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp"
+                        android:text="Đơn giá: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/ed_dongia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30sp"
+                        android:hint="(k)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:enabled="true"
+                        android:numeric="integer"
+                        android:digits="0123456789"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:text="Thành Tiền:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_Thanhtien"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:textSize="40sp"
+                    android:text="14 000k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="40sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="k"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/but_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_but_positive"
+                android:textSize="30sp"
+                android:textColor="@color/colorAccent"
+                android:text="XONG"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

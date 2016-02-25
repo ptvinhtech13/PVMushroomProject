@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="135dp">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_vumua"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text="VU MUA 1"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/tv_vumua_time_bat_dau"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start:"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/tv_vumua_time_ket_thuc"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End:"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tình trạng: "
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                />
+            <TextView
+                android:id="@+id/tv_vumua_time_stage"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tinh_trang_ngung_dien_ra"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

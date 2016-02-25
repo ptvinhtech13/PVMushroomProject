@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/tv_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ds_KhachHang"
+        android:background="@drawable/bg_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <ListView
+        android:id="@+id/lv_ds_khach_hang"
+        android:layout_below="@+id/tv_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"></ListView>
+    <Button
+        android:id="@+id/but_ok"
+        android:layout_below="@+id/lv_ds_khach_hang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XONG"
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+
+        android:background="@drawable/bg_but_positive"
+        />
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:print="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:minHeight="48dp"
+    android:paddingLeft="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="28dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/node_selector"
+        android:orientation="vertical"
+        android:id="@+id/picture_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_line"
+            android:background="@color/fab_menu_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="2dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/circle_blank"
+            android:textColor="@color/fab_menu_2"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+
+        <View
+            android:id="@+id/bot_line"
+            android:background="@color/fab_menu_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="2dp"
+            android:layout_height="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/picture_wrapper">
+        <LinearLayout
+            android:layout_width="270dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:text="CUSTOMER's NAME"
+                android:id="@+id/tv_tenKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_Soluong"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Số Lượng: 200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_Soluong"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/temp2"
+                    android:layout_marginLeft="140dp"
+                    android:id="@+id/tv_DonGia"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Đơn Giá: 200k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_DonGia"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_Thanhtien"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Thành Tiền: 200k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tv_Thanhtien"
+                    android:textColor="@color/colorAccent"
+                    android:text="k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_tinhtrang"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="150dp"
+                    android:layout_toRightOf="@+id/temp"
+                    android:textSize="13sp"
+                    android:textColor="#D84315"
+                    android:text="Chưa thanh toán"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/but_menu"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/but_selector_menu"/>
+
+    </LinearLayout>
+    <View
+        android:layout_toRightOf="@+id/picture_wrapper"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/container"
+        android:id="@+id/bottom_line"
+        android:background="@color/fab_menu_2"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+
+</RelativeLayout>

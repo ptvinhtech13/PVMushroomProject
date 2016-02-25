@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <HorizontalScrollView
+        android:id="@+id/hsv_Timeline"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ly_container"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button
+        android:layout_below="@+id/hsv_Timeline"
+        android:id="@+id/but_Add_Month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM MỘT THÁNG MỚI"
+        android:background="@color/navigation1"
+        android:elevation="3dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+    <ListView
+        android:layout_below="@+id/but_Add_Month"
+        android:id="@+id/lv_Month_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+
+</RelativeLayout>
